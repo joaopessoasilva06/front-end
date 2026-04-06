@@ -1,86 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .campo{
-            background-color: yellow;
-            border:5px solid green;
+        body {
+            width: 1500px;
+            height: 700px;
         }
-        .botao{
-            width:5%;
-            height:3%;
-            background-color: rgb(139, 94, 137);
-            border:1.5px solid purple;
+
+        header {
+            background: #22C1C3;
+            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            width: 100%;
+            height: 10%;
         }
-        .botao2{
-            width:5%;
-            height:3%;
-            background-color: rgb(37, 158, 107);
-            border:1.5px solid rgb(14, 8, 187);
+
+        h1 {
+            color: rgb(121, 5, 236);
+            font-family: arial;
+            font-size: 100%;
+            font-weight: bold;
+            text-align: center;
         }
-        .botao3{
-            width:5%;
-            height:3%;
-            background-color: rgb(178, 26, 117);
-            border:1.5px solid rgb(166, 206, 24);
+
+        h5 {
+            color: rgb(168, 8, 29);
+            font-family: arial;
+            font-size: 60%;
+            font-weight: bold;
+            text-align: center;
         }
-        .botao4{
-            width:5%;
-            height:3%;
-            background-color: rgb(178, 77, 26);
-            border:1.5px solid rgb(18, 126, 172);
+
+        main {
+            background-color: purple;
+            width: 100%;
+            height: 80%;
+        }
+
+        footer {
+            background-color: rgb(17, 128, 0);
+            width: 100%;
+            height: 10%;
+        }
+        .fotoHome{
+            background-image: url("https://www.ohmygoodness.com/reserved/cards/202004100603170.barber.gif");
+            width: 100%;
+            height:100%;
+            background-repeat: no-repeat;
         }
     </style>
-    <script>
-        function adicionar(valor){
-            document.getElementById("campo").value += valor;
-        }
-        function limpar(){
-            document.getElementById("campo").value = "";
-        }
-        function calcular(){
-            var campo = document.getElementById("campo");
-            try{
-               campo.value = eval(campo.value); 
-            }catch(error){
-                campo.value ="Erro";
-            }
-        }
-    </script>
 </head>
+
 <body>
-    <fieldset>
-        <legend>CALCULADORA DO 2ºA</legend>
-        <input type="text" id="campo" onclick="adicionar('1')" class="campo"><br><br>
-        <button onclick="adicionar('1')" class="botao">1</button>
-        <button onclick="adicionar('2')" class="botao">2</button>
-        <button onclick="adicionar('3')" class="botao">3</button>
-        <button onclick="adicionar('*')" class="botao2">x</button>
-        <button onclick="adicionar('^')" class="botao2">^</button>
-        <br>
-        <button onclick="adicionar('4')" class="botao">4</button>
-        <button onclick="adicionar('5')" class="botao">5</button>
-        <button onclick="adicionar('6')" class="botao">6</button>
-        <button onclick="adicionar('/')" class="botao2">/</button>
-        <button onclick="adicionar('(')" class="botao2">(</button>
-        <br>
-        <button onclick="adicionar('7')" class="botao">7</button>
-        <button onclick="adicionar('8')" class="botao">8</button>
-        <button onclick="adicionar('9')" class="botao">9</button>
-        <button onclick="adicionar('+')" class="botao2">+</button>
-        <button onclick="adicionar(')')" class="botao2">)</button>
-        <br>
-        <button onclick="adicionar('.')" class="botao2">.</button>
-        <button onclick="adicionar('0')" class="botao">0</button>
-        <button onclick="adicionar(',')" class="botao2">,</button>
-        <button onclick="adicionar('-')" class="botao2">-</button>
-        <button onclick="adicionar('%')" class="botao2">%</button>
-        <br>
-        <button onclick="limpar()" class="botao3">C</button>
-        <button onclick="calcular()" class="botao4">=</button>
-    </fieldset>
+    <header>
+        <h1>BARBEARIA DO 2°A</h1>
+        <h5>Te deixando bonitinho desde 1974</h5>
+    </header>
+    <main>
+        <div class="fotoHome"></div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
