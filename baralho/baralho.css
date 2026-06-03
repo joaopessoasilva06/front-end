@@ -1,9 +1,13 @@
+body{
+    display: flex;
+}
 .linha1{
     width: 50px;
     height:100px ;
     border-radius:10px ;
     border: 1px solid black;
     display: inline-block;
+    display:1;
 }
 .linha2{
     
