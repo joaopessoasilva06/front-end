@@ -1,10 +1,10 @@
-.linha11, .linha22, .linha33 {
+.linha1, .linha2, .linha3 {
     display: flex;
     gap: 10px;           /* espaço entre as cartas */
     margin-bottom: 20px;
 }
 
-.linha1, .linha2, .linha3 {
+.linha11, .linha12, .linha13, .linha14, .linha15,.linha21, .linha22, .linha23, .linha24, .linha25,.linha31, .linha32, .linha33, .linha34, .linha35,  {
     width: 100px;
     height: 140px;
     background: white;
