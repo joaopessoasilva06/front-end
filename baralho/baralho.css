@@ -1,16 +1,24 @@
-.linha 1, .linha 2, .linha 3 {
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.linha1, .linha2, .linha3 {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
-}
-.carta {
-    width: 100px;
-    height: 140px;
-    background: white;
-    border: 2px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 12px;
+} 
+
+.carta { 
+    width: 100px; 
+    height: 140px; 
+    background: white; 
+    border: 2px solid black; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    font-size: 12px; 
 }
