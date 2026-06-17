@@ -1,6 +1,7 @@
 .linha1, .linha2, .linha3 {
     display: flex;
     gap: 20px;
+    margin-top:20px;
 } 
 .carta { 
     width: 100px; 
